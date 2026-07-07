@@ -1,8 +1,6 @@
 name: Build APK
 
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -53,6 +51,7 @@ fullscreen = 0
 log_level = 2
 warn_on_root = 1
 EOF
+        cat buildozer.spec
     
     - name: Build APK
       run: |
